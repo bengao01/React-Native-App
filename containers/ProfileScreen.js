@@ -23,6 +23,9 @@ class ProfileScreen extends Component {
     render(){
         return (
             <View style={styles.container}>
+                {/* TODO: show profile pic */}
+                {/* TODO: button to upload profile pic */}
+                {/* TODO: button to remove profile pic */}
                 <Text style={styles.text}>My Profile Screen</Text>
             </View>
         );
