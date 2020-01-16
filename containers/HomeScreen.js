@@ -22,12 +22,19 @@ class HomeScreen extends Component {
     // componentDidMount
 
     render() {
+        let img;
+
         return (
-            <View style={styles.container}>
-                <Text style={styles.text}>My First Home Screen</Text>
+            <View style={[styles.container, {backgroundColor: 'purple'}]}>
+                <View style={styles.titleContainer}>
+                    <Text style={styles.titleText}> The REAL Catbook </Text>
+                </View>
+                <View style={styles.imageContainer}>
+                    {img}
+                </View>
             </View>
         );
-    }
+    };
 };
 
 const styles = StyleSheet.create({
@@ -55,7 +62,7 @@ const styles = StyleSheet.create({
         height: undefined,
         width: 300,
         resizeMode: 'contain',
-    }
+    },
 });
 
 
